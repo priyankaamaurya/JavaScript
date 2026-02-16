@@ -81,8 +81,7 @@
 
 
 
-let str ="JavaScript is a object based programming language" 
-console.log(str.search("object")) 
+
 
 
 

@@ -1392,11 +1392,11 @@ console.log("Hello Wolrd!!!")
 //! In non strict mode this inside the function will points to the window.
 //! Use strict: The purpose of the use strict is to indicate that your JS code will be executed in a strict mode.
 
-// console.log(this)
+// console.log(this)    //window
 
 // "use strict"
 // function findThis(){
-//     console.log(this)   //window
+//     console.log(this)   //undefined
 // }
 // findThis()
 
@@ -1462,7 +1462,7 @@ console.log("Hello Wolrd!!!")
 //! for of
 // let arr = [1, 2, 3, 4];
 
-// for(let i in arr) {
+// for(let i of arr) {
 //     console.log(i)
 // }
 
@@ -1493,8 +1493,8 @@ console.log("Hello Wolrd!!!")
 // console.log(c);
 // console.log(arrData);
 
-//! Spread operator
-// The spread operator is used to expand the values of an array and properties of an object.
+//! Spread operator:
+//! The spread operator is used to expand the values of an array and properties of an object.
 
 //? Object Destructuring  
 
@@ -1505,7 +1505,7 @@ console.log("Hello Wolrd!!!")
 //     isDev : true,
 // }
 
-// let { id, name, ...left} = obj;
+// let { id, objName, ...left} = obj;
 
 // console.log(id);
 // console.log(objName);
@@ -1600,7 +1600,7 @@ console.log("Hello Wolrd!!!")
 // }
 
 //? For only values
-// for (let key in obj){
+// for (let value in obj){
 //     console.log(obj[key])
 // }
 
@@ -1646,4 +1646,38 @@ console.log("Hello Wolrd!!!")
 
 //! JSON.parse : It is the in-built method present in the JS which is used to convert JSON into JS object.
 
+//? call, apply, bind
 
+// let customer1 = {
+//     id : 1,
+//     customerName : Priyanka,
+// }
+
+// let customer2 = {
+//     id : 2,
+//     customerName : Priyanka,
+// }
+
+// let customer3 = {
+//     id : 3,
+//     customerName : Priyanka,
+// }
+
+// function makeBill(amount, address) {
+//     console.log(`My name is ${this.customerName} and total amount is ${amount} and address is ${address}`)
+// }
+
+// makeBill.call(customer1, 950000, "Gurgaon")
+// makeBill.call(customer2, 900000, "Noida")
+
+// makeBill.apply(customer1, [950000, "Gurgaon"])
+// makeBill.apply(customer2, [9850000, "Noida"])
+
+// let newFn = makeBill.call(customer1, 950000, "Gurgaon")
+// newFn()
+
+//! call: The call method is used to invoke a function immediately while explicitly specifying what the this keyword should refer to. It accepts arguments individually (comma-separated).
+
+//! apply: the apply() method is similar to call, but it invokes the function by passing the arguments as an array (or array like object). It also executes the function immediately and allows you to explicitly set the value of this.
+
+//! bind: The bind() method doesm't execute the function immediately. Instead, it returns a new function with a permanently assigned this value and optional preset arguments. The returned function can be invoked later.
