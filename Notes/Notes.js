@@ -1680,4 +1680,95 @@ console.log("Hello Wolrd!!!")
 
 //! apply: the apply() method is similar to call, but it invokes the function by passing the arguments as an array (or array like object). It also executes the function immediately and allows you to explicitly set the value of this.
 
-//! bind: The bind() method doesm't execute the function immediately. Instead, it returns a new function with a permanently assigned this value and optional preset arguments. The returned function can be invoked later.
+//! bind: The bind() method doesn't execute the function immediately. Instead, it returns a new function with a permanently assigned this value and optional preset arguments. The returned function can be invoked later.
+
+//? Browser Object Model (BOM)
+
+//! It stands for Browser Object Model 
+
+//! Whenever we open any browser the browser itself consider as an Object. This object is known as BOM. 
+
+//! The another name of BOM is "Window". 
+
+//! Window is the "global object" in the frontend. 
+
+//! The main object present inside the window are 
+// 1. Document 
+// 2. Navigator 
+// 3. Location 
+// 4. History 
+// 5. Screen
+
+//? DOM 
+
+//! It stands for Document Object Model.
+
+//! Whenever we run our html file inside our browser. The browser creates a tree like structure of our html code in this tree like structure all the elements are converted in the form of nodes. This tree like structure is known as "DOM tree".
+
+//! The DOM tree is created to manipulate the html through the JavaScript (manipulate means adding the element, removing the element, adding the style, removing the style, adding the attribute, removing the attribte etc..)
+
+// node --> object --> javascript
+// Dom tree create so that 
+
+//? Methods or Accessing HTML elements
+
+//! document.getElementById():
+// This method is used for targeting the HTML Elements with the help of Id of the element.
+
+// let box = document.getElementById("box")
+// console.log(box)
+
+//! document.getElementByClassName():
+// This method is used for targeting the HTML Elements using the class attribute. It targets all the HTML Elements with matching class name and stores in a array like object known as HTML Collection.
+
+// let para = document.getElementByClassName("abc")
+// console.log(para)
+
+//! document.getElementByTagName():
+// It is used for targeting the HTML Elements through their tag name and it returns all the targeted element in the HTML Collection.
+
+// let data = document.getElementByTagName("p")
+// console.log(data)
+
+//! document.querySelector():
+// Using this method we can target an HTML Elements using their id attribute, class attribute, tag name and it returns the first matching element.
+// Whenever we are using this method then we have to use the symbol of the id and class. 
+
+// let result = document.querySelector("#box")
+// console.log(result)
+// let res = document.querySelector(".abc")
+// console.log(res)
+// let re = document.querySelector("p")
+// console.log(re)
+
+//! document.querySelectorAll():
+// It is used for targeting the HTML Elements using their id attribute, class attribute, tag name and we have to keep the symbol of id and class.
+// It returns all the matching elements in a array like object known as "nodelist". 
+
+
+// let data = document.querySelectorAll("#box")
+// console.log(data)
+
+// let data2 = document.querySelectorAll(".abc")
+// console.log(data2)
+// console.log(data2[0])
+
+// let data3 = document.querySelectorAll("p")
+// console.log(data3)
+
+//? Inner HTML
+//! It gives the content as well as the tags in which the content is present 
+
+//? Inner text: 
+//! It gives only the content 
+
+//? Text content : 
+//! It gives the content with extra spaces as it is written in the HTML
+
+// let ele = document.querySelector(".abc")
+// console.log(ele)
+// console.log(ele.innerHTML)
+// console.log(ele.innerText)
+// console.log(ele.textContent)
+
+
