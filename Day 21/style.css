@@ -1,0 +1,12 @@
+/* .abc{
+            color: red;
+            background-color: black;
+            padding: 10px;
+        } */
+
+.theme{
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}

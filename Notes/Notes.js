@@ -1771,4 +1771,107 @@ console.log("Hello Wolrd!!!")
 // console.log(ele.innerText)
 // console.log(ele.textContent)
 
+//? Ways to get and set attributes using the DOM
+
+// let ele = document.querySelector("input")
+// console.log(ele)
+
+//! accessing the value of attributes
+// console.log(ele.type)
+// console.log(ele.placeholder)
+
+//! updating the value of attributes
+// ele.type="password"
+
+//! adding new attributes
+// ele.minLength = 10
+
+//? Methods for accessing attribute
+
+//! getAttribute() : Used to get the attribute.
+// console.log(ele.getAttribute("type"))
+// console.log(ele.getAttribute("placeholder"))
+
+//! setAttribute() : Used to set the attribute.
+// console.log(ele.setAttribute("name" , "abc"))
+// console.log(ele.setAttribute("minlength", 10))
+
+// console.log(ele.setAttribute("placeholder", "hello"))
+
+//? Ways to add CSS using DOM
+
+// let headTag = document.querySelector("h1")
+// console.log(headTag)
+
+//! inline CSS 
+// headTag.style.color = "red"
+// headTag.style.backgroundColor = "black"
+
+//! Internal & External CSS 
+// headTag.className = "abc"
+
+// headTag.className = "hlo"  // It replaces all elements inside the ele
+
+//! ** classList **
+
+//! classList.add() : It is used for adding multiple classes.
+// headTag.classList.add("abc") 
+// headTag.classList.add("def") 
+
+//! classList.remove() : It is used for removing classes.
+// headTag.classList.remove("abc") 
+
+//! classList.toggle() : It is used for both adding as well as removing class, if class is already present then it will remove the class else it will add the class.
+// headTag.classList.toggle("abc") 
+
+
+//? Event Handler in JavaScript
+
+//! Event Handler are special type of attribute which allows us to call the function based on the user action. All the Event Handler are prefixed with "ON".
+
+//? Following types of Event Handler are : there are 70- 80 + we have
+
+//! Form Event : 
+// onsubmit
+
+//! Mouse Event :
+// onmousehover, onmouseup , onmousedown, onmousemove
+
+//! Input Event :
+// onfocus. onblur, onchange, onselect
+
+//! Keyboard Event :
+// onkeyup, onkeydown
+
+//! Button Event :
+// ondblclick, onclick
+
+
+//? TASK -- DARK OR LIGHT MODE
+
+//! HTML
+// <button ondblclick="changeTheme()"> DARK MODE </button>
+
+//! JS
+// function changeTheme(){
+//     let bdy = document.querySelector("body")
+   
+//     let btn = document.querySelector("button")
+
+//     if(btn.innerText === "DARK MODE"){
+//         btn.innerText = "LIGHT MODE"
+//         bdy.classList.toggle("theme")
+//     }else {
+//         btn.innerText = "DARK MODE"
+//         bdy.classList.toggle("theme")
+//     }
+// }
+
+//! CSS
+// .theme{
+//     height: 100vh;
+//     width: 100vw;
+//     background-color: black;
+//     color: white;
+// }
 
