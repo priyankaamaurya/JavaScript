@@ -1,5 +1,3 @@
-// function togglePassword(){
-
     const pwd = document.getElementById("password");
 
     const checkbox = document.getElementById("check");
@@ -14,4 +12,3 @@
 
     });
     
-// }

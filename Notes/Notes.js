@@ -1875,3 +1875,19 @@ console.log("Hello Wolrd!!!")
 //     color: white;
 // }
 
+//? Event Propagation
+//! The process of calling an event is known as Event Propagation.
+//! There are 2 types of Event Propagation:
+//! 1. Event Bubbling 
+//! 2. Event Capturing
+
+//? 1. Event Bubbling: The process of calling the inner event first and then the outer event. By default all the event handler performs event bubbling.
+
+//? 2. Event Capturing: It is the process of calling the outer most event first and then the inner event. Event Capturing can be performed by using addEventListener, where we have to pass true as the last arguments in the addEventListener.
+
+//! addEventListener(): It is a method which is used to add the event handler through the JavaScript. It accepts three arguments.
+//? 1. eventName: without using own prefix
+//? 2. callbackFunction: which we want to execute based on the user actions
+//? 3. booleanValue: It is by default false, which allows us to perform eventBubbling or eventCapturing. If you are passing true as a 3rd arguments it performs eventCapturing.
+
+//!  removeEventListener: It is used to remove the event.

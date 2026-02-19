@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+}
+
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.grandParent{
+    height: 500px;
+    width: 500px;
+    background-color: rgb(248, 43, 169);
+    padding: 20px;
+}
+
+.grandParent> .par{
+    height: 350px;
+    width: 350px;
+    background-color: rgb(191, 90, 204);
+    padding: 20px;
+}
+
+.grandParent> .par> .child{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(104, 192, 233);
+}
+
+
+/* button{
+    height: 50px;
+    width: 100px;
+} */
