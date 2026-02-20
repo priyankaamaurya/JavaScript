@@ -6,17 +6,18 @@ let child = document.querySelector(".child")
 
 gp.addEventListener("click", ()=>{
     console.log("GrandParent")
-}, true)
+}, )
 
 par.addEventListener("click", ()=>{
     console.log("Parent")
-}, true)
+}, )
 
 child.addEventListener("click", ()=>{
     console.log("Child")
-}, true)
+}, )
 
-
+// in case of bubbling --> use false
+// in case of capturing --> use true
 
 // let btn = document.querySelector("button")
 

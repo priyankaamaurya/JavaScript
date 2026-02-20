@@ -1885,6 +1885,9 @@ console.log("Hello Wolrd!!!")
 
 //? 2. Event Capturing: It is the process of calling the outer most event first and then the inner event. Event Capturing can be performed by using addEventListener, where we have to pass true as the last arguments in the addEventListener.
 
+// in case of bubbling --> use false
+// in case of capturing --> use true
+
 //! addEventListener(): It is a method which is used to add the event handler through the JavaScript. It accepts three arguments.
 //? 1. eventName: without using own prefix
 //? 2. callbackFunction: which we want to execute based on the user actions
