@@ -954,11 +954,11 @@ console.log("Hello Wolrd!!!")
 //! 10. trim(): Removes the extra white spaces from both ends of the string.
 // console.log(str.trim())
 
-//! 11. padStart(maxlegth, character): pads the current string with a given string at the start of the string.
+//! 11. padStart(maxlength, character): pads the current string with a given string at the start of the string.
 // let str ="strawberry"; 
 // console.log(str.padStart(15, "s"))
 
-//! 12. padEnd(maxlegth, character):  pads the current string with a given string at the end of the string.
+//! 12. padEnd(maxlength, character):  pads the current string with a given string at the end of the string.
 // let str1 ="pineapple"; 
 // console.log(str1.padEnd(15, "e"))
 
