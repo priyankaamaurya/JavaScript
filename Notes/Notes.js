@@ -1894,3 +1894,120 @@ console.log("Hello Wolrd!!!")
 //? 3. booleanValue: It is by default false, which allows us to perform eventBubbling or eventCapturing. If you are passing true as a 3rd arguments it performs eventCapturing.
 
 //!  removeEventListener: It is used to remove the event.
+
+//? Timing Function in JS
+//! There are mainly 2 timing function we have in JS using these timing function we can make our JS code asynchronous. 
+
+//! 1. SetTimeout:
+// It accepts 2 argument --> 1. Callback Function  2. Time in milliseconds
+// ClearTimeout --> To stop the setTimeout we uses clearTimeout. It accepts the reference of the the setTimeout.
+
+// console.log("Task 1")
+// console.log("Task 2")
+
+// for (let i=0; i<10000; i++){}
+
+// console.log("Task 3")
+
+//! using setTimeout
+
+// console.log("Task 1")
+// console.log("Task 2")
+
+// setTimeout(()=>{
+//     for (let i=0; i<10000; i++){}
+//     console.log("Expensive Task Done")
+// },3000)
+
+
+// console.log("Task 3")
+
+//! using clearTimeout
+
+// console.log("Task 1")
+// console.log("Task 2")
+
+// let clrData = setTimeout(()=>{
+//     console.log("Task 3")
+// },3000)
+
+// console.log("Task 4")
+
+// let btn = document.querySelector("button")
+// btn.addEventListener("click", ()=>{
+//     console.log("Button is clicked")
+//     clearTimeout(clrData)
+// })
+
+//! 2. Set Interval:
+// It accepts 2 argument --> 1. Callback function 2. Time in milliseconds
+// clearInterval: It accepts the reference of the setInterval and cancels/stop the execution of the setInterval
+// Diff between setTimeout and setInterval is setTimeout executes the callback function only once but setInterval executes the callback function every span of time.
+
+
+// let i=1
+// let clrInterVal = setInterval(()=>{
+//     console.log("Task 3", i)
+//     i++
+// }, 1000);
+
+// let btn = document.querySelector("button")
+// btn.addEventListener("click", ()=>{
+//     console.log("Button is clicked")
+//     clearInterval(clrInterVal)
+// })
+
+//? Promises
+//! It is a object, it tells the eventual completion or failure of an asynchronous task.
+//! There are 3 states of promises:
+// 1. Fulfilled or resolve
+// 2. Pending or waiting
+// 3. Rejected
+
+//! Creating a Promises
+
+// let promise1 = new Promise((res, rej)=>{
+    
+// })
+// console.log(promise1)
+
+// let promise2 = new Promise((res, rej)=>{
+//     res("PROMISE IS FULFILLED")
+// })
+// console.log(promise2)
+
+// let promise3 = new Promise((res, rej)=>{
+//     rej("PROMISE IS REJECTED")
+// })
+// console.log(promise3)
+
+// let promise4 = new Promise((res, rej)=>{
+//     res("PROMISE IS FULFILLED")
+//     rej("PROMISE IS REJECTED")
+// })
+// console.log(promise4)
+
+//? Methods of promises
+
+//! Instance methods of Promises
+
+//! 1. .then(): This method will be executed, when the promise will be resolved.
+//! 2. .catch(): This method will be executed, when the promise will be rejected.
+//! 3. .finally(): This method will be executed, when the promise will be resolved or rejected.
+
+// let promise1 = new Promise((res, rej)=>{
+//     res("PROMISE IS FULFILLED")
+//     rej("PROMISE IS REJECTED")
+// })
+// console.log(promise1)
+
+// promise1
+// .then((res)=>{
+//     console.log(res)
+// })
+// .catch((err)=>{
+//     console.log(err)
+// })
+// .finally(()=>{
+//     console.log("Execeuted Everytime")
+// })

@@ -30,5 +30,4 @@
 // newFn()
 
 
-let str ="It always returns the position";
-console.log(str.lastIndexOf("the")) 
+
