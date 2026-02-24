@@ -1989,7 +1989,7 @@ console.log("Hello Wolrd!!!")
 
 //? Methods of promises
 
-//! Instance methods of Promises
+//? Instance methods of Promises
 
 //! 1. .then(): This method will be executed, when the promise will be resolved.
 //! 2. .catch(): This method will be executed, when the promise will be rejected.
@@ -2011,3 +2011,150 @@ console.log("Hello Wolrd!!!")
 // .finally(()=>{
 //     console.log("Execeuted Everytime")
 // })
+
+//? ** Static methods of Promises
+
+//? Promise.all() : 
+//! It is the static method of promise which accepts an array containing multiple promises. It returns another promises.
+//! If all the mention promises in the array will be resolved then promise.all method will be resolved else any one of the promise will be rejected then the whole promise will be rejected.
+
+
+// let p1 = new Promise((res, rej)=>{
+//     res("Promise 1 Completed")
+// })
+
+// let p2 = new Promise((res, rej)=>{
+//     res("Promise 2 Completed")
+// })
+
+// let p3 = new Promise((res, rej)=>{
+//     rej("Promise 3 Completed")
+// })
+
+// let res = Promise.all([p1, p2, p3])
+
+// res.then(()=>{
+// console.log("Promise Resolved")
+// }).catch(()=>{
+// console.log("Promise Rejected")
+// })
+
+//? Promise.allSettled():
+//! This method is similar to promise.all but it waits for all the promise to settle (either resolve or rejected) and it return an array of object with the status of each promise.
+//! It is used to ensure that all the promise are completed and we want the result of each promise whether it is succeed or fail.
+
+// let p1 = new Promise((res, rej)=>{
+//     res("Promise 1 Completed")
+// })
+
+// let p2 = new Promise((res, rej)=>{
+//     res("Promise 2 Completed")
+// })
+
+// let p3 = new Promise((res, rej)=>{
+//     rej("Promise 3 Completed")
+// })
+
+// let res = Promise.allSettled([p1, p2, p3])
+
+// res.then((result)=>{
+// console.log(result)
+// }).catch((err)=>{
+// console.log(err)
+// })
+
+
+//? Promise.race(): 
+//! It accepts an array of promises and returns a single promise it will return the promise as soon as any one of the promise is either resolve or rejected.
+
+// let p1 = new Promise((res, rej)=>{
+//     rej("Promise 1 Completed")
+// })
+
+// let p2 = new Promise((res, rej)=>{
+//     res("Promise 2 Completed")
+// })
+
+// let p3 = new Promise((res, rej)=>{
+//     rej("Promise 3 Completed")
+// }) 
+
+// let res = Promise.race([p1, p2, p3])
+
+// res.then((result)=>{
+// console.log(result)
+// }).catch((err)=>{
+// console.log(err)
+// })
+
+
+//? Promise.any(): 
+//! It takes array of promises and returns a single promise that resolves as soon as any one of the promise is fulfilled. If all the promises are rejected then it returns the whole promise as rejected.
+
+// let p1 = new Promise((res, rej)=>{
+//     rej("Promise 1 Completed")
+// })
+
+// let p2 = new Promise((res, rej)=>{
+//     res("Promise 2 Completed")
+// })
+
+// let p3 = new Promise((res, rej)=>{
+//     rej("Promise 3 Completed")
+// })
+
+// let res = Promise.any([p1, p2, p3])
+
+// res.then((result)=>{
+// console.log(result)
+// }).catch((err)=>{
+// console.log(err)
+// })
+
+//? Callback Hell: 
+//! It is a situation where multiple callback function creates a deeply intended complex structure of code
+//! The another name of callback is Pyramid of Doom.
+
+
+// setTimeout(()=> {
+//     setTimeout(()=> {
+//         setTimeout(()=> {
+//             setTimeout(()=> {
+//                 setTimeout(()=> {
+//                     setTimeout(()=> {
+//                         setTimeout(()=> {
+//                             console.log("TASK DONE")
+//                         },2000)
+//                     },2000)
+//                 },2000)
+//             },2000)
+//         },2000)
+//     },2000)
+// },2000)
+
+//? Fetch : 
+//! It is a method which is used to fetch the data from the API, Backend or Server. It returns a promise.
+
+// let res = fetch("https://api.github.com/users")
+
+// res.then((data)=> {
+//     return data.json()
+// }).then((finalData)=> {
+//     console.log(finalData)
+// }).catch((err)=>{
+//     console.log(err)
+// })
+
+
+//! async and await
+
+// async function fetchAPI() {
+//     try{
+//         let res = await fetch("https://api.github.com/users")
+//         let actualData = await res.json()
+//         console.log(actualData)
+//     } catch (error) {
+//         console.log(error)
+//     }   
+// }
+// fetchAPI()
