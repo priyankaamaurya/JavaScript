@@ -2146,7 +2146,8 @@ console.log("Hello Wolrd!!!")
 // })
 
 
-//! async and await
+//? async and await:
+//! It is the modern way to handle the promise in JS. Async is a keyword which is used to make the function asynchronous. Await is a keyword which is used to wait the until the promise either resolved or rejected.
 
 // async function fetchAPI() {
 //     try{
@@ -2158,3 +2159,45 @@ console.log("Hello Wolrd!!!")
 //     }   
 // }
 // fetchAPI()
+
+//? Web-storages
+//! Web storages are the in-built storage provided by the browser.
+
+//? Types of Web Storage
+//! 1. localStorage : Local storage persist the data even after closing the browser. The size of the localStorage is 2-8 MB (depends on the browser).
+
+//? setItem(key, Value) : It is used to add the data inside the localStorage.
+// localStorage.setItem("id",1)
+// localStorage.setItem("name", "Prince")
+// localStorage.setItem("Designation", "Developer")
+
+//? getItem(key) : It is used to get the data from the localStorage.
+// let res = localStorage.getItem("id")
+// console.log(res)
+// console.log(localStorage.getItem("name"))
+
+//? removeItem(key) : It is used to remove the data from the localStorage.
+// localStorage.removeItem("id")
+
+//? clear() : It is used to clear all the data present inside the localStorage.
+// localStorage.clear()
+
+//! 2. sessionStorage : sessionStorage persist the data only for the particular session. It does not persist the data after closing the browser. The size of the storage is 2-8 MB (depends on the browser).
+
+//? setItem(key, Value) : It is used to add the data inside the localStorage.
+// localStorage.setItem("id",1)
+// localStorage.setItem("name", "Prince")
+// localStorage.setItem("Designation", "Developer")
+
+//? getItem(key) : It is used to get the data from the localStorage.
+// let res = localStorage.getItem("id")
+// console.log(res)
+// console.log(localStorage.getItem("name"))
+
+//? removeItem(key) : It is used to remove the data from the localStorage.
+// localStorage.removeItem("id")
+
+//? clear() : It is used to clear all the data present inside the localStorage.
+// localStorage.clear()
+
+//! 3. CacheStorage 
