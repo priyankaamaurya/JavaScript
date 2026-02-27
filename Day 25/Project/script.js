@@ -31,6 +31,7 @@ else{
 //     }
 // })
 
+                    //  ** OR **   //
 
 let checkbox = document.querySelector("#check");
     
