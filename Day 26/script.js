@@ -1,22 +1,4 @@
 
-//? setItem(key, Value) : 
-// sessionStorage.setItem("id",1)
-// sessionStorage.setItem("name", "Prince")
-// sessionStorage.setItem("Designation", "Developer")
-
-//? getItem(key) :
-// let res = sessionStorage.getItem("id")
-// console.log(res)
-// console.log(typeof(res))
-// console.log(sessionStorage.getItem("name"))
-
-//? removeItem(key) : 
-// sessionStorage.removeItem("id")
-
-//? clear() : 
-// sessionStorage.clear()
-
-
 //? Date Object
 
 //! current things
@@ -31,6 +13,15 @@
 // console.log(now.getSeconds())
 // console.log(now.getTime())
 // console.log(now.getFullYear())
+// console.log(now.getMilliseconds())
+// console.log(now.getTimezoneOffset())
+// console.log(now.getUTCDate())
+// console.log(now.getUTCDay())
+// console.log(now.getUTCFullYear())
+// console.log(now.getUTCHours())
+// console.log(now.getUTCMinutes())
+// console.log(now.getUTCMonth())
+// console.log(now.getUTCSeconds())
 
 //! when javaScript firstly introduced
 // let date = new Date(0)
@@ -47,7 +38,7 @@
 // let birthDate = new Date("2005-06-25")
 // let currentDate = new Date()
 // console.log(currentDate-birthDate) 
-// always return in seconds
+
 
 //? Math.Object :
 

@@ -2164,6 +2164,7 @@ console.log("Hello Wolrd!!!")
 //! Web storages are the in-built storage provided by the browser.
 
 //? Types of Web Storage
+
 //! 1. localStorage : Local storage persist the data even after closing the browser. The size of the localStorage is 2-8 MB (depends on the browser).
 
 //? setItem(key, Value) : It is used to add the data inside the localStorage.
@@ -2200,7 +2201,7 @@ console.log("Hello Wolrd!!!")
 //? clear() : It is used to clear all the data present inside the localStorage.
 // sessionStorage.clear()
 
-//! 3. CacheStorage 
+//! 3. CacheStorage : The CacheStorage interface represents the storage for Cache objects. Available only in secure contexts.
 
 
 //? Date Object
@@ -2217,6 +2218,16 @@ console.log("Hello Wolrd!!!")
 // console.log(now.getSeconds())
 // console.log(now.getTime())
 // console.log(now.getFullYear())
+// console.log(now.getMilliseconds())
+// console.log(now.getTimezoneOffset())
+// console.log(now.getUTCDate())
+// console.log(now.getUTCDay())
+// console.log(now.getUTCFullYear())
+// console.log(now.getUTCHours())
+// console.log(now.getUTCMinutes())
+// console.log(now.getUTCMonth())
+// console.log(now.getUTCSeconds())
+
 
 //! when javaScript firstly introduced
 // let date = new Date(0)

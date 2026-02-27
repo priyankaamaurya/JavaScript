@@ -1,3 +1,4 @@
+//! 1. localStorage :
 
 //? setItem(key, Value) : It is used to add the data inside the localStorage.
 // localStorage.setItem("id",1)
