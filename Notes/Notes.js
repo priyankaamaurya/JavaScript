@@ -1077,7 +1077,7 @@ console.log("Hello Wolrd!!!")
 //! 6. splice(): It is used for removing as well as adding elements in the array. It accepts 3 arguments (starting index, delete count, new elements(optional)) 
 // let arr  =[1,2,3,4,5,6,7,8] 
 // console.log(arr)
-// let newArr = arr.slice(2, 5, "Hiii")
+// let newArr = arr.splice(2, 5, "Hiii")
 // console.log(newArr)
 // console.log(arr)
 
