@@ -1102,7 +1102,7 @@ console.log("Hello Wolrd!!!")
 //? Array higher order method
 // A Method that accepts another function as an arguments.
 
-//! 9. find(): It accepts a callback function which iterates on all the elements that is present inside a array and it returns the value of the first elememt that passes the condition. If none of the elements present inside an array passes the condition then it will return undefined. It does not execute for empty array. It does not modifies the original array. 
+//! 9. find(): It accepts a callback function which iterates on all the elements that is present inside an array and it returns the value of the first elememt that passes the condition. If none of the elements present inside an array passes the condition then it will return undefined. It does not execute for empty array. It does not modifies the original array. 
 
 // let arr = [10, 20, 30, 40, 50];
 
@@ -1183,7 +1183,7 @@ console.log("Hello Wolrd!!!")
 // console.log(res)
 
 //? Object 
-// It is a non-primitive data type which is used to store the data in the form of key and value pairs are separated by colon. key and value pair together are known as properties. 2 properties are separated by comma. 
+//! It is a non-primitive data type which is used to store the data in the form of key and value pairs are separated by colon. key and value pair together are known as properties. 2 properties are separated by comma. 
 
 //! create
 
