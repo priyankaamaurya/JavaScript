@@ -1259,17 +1259,17 @@ console.log("Hello Wolrd!!!")
 
 // console.log(Object.keys(obj))
 
-//! object.values(): It returns the all values that is present inside the object in the form of array.
+//! Object.values(): It returns the all values that is present inside the object in the form of array.
 // console.log(Object.values(obj))
 
-//! object.entries(): It returns multi-dimension array which stores both key and value pair.
+//! Object.entries(): It returns multi-dimension array which stores both key and value pair.
 // console.log(Object.entries(obj))
 
-//! object.fromEntries(): It accepts multi-dimension array and returns a object.
+//! Object.fromEntries(): It accepts multi-dimension array and returns a object.
 // let arr = [["id", 1], ["objName", "Alien"]]
 // console.log(Object.fromEntries(arr))
 
-//! object.freeze(): Prevents the modification of existing property, and prevents the addition of new properties and deletion of existing property.
+//! Object.freeze(): Prevents the modification of existing property, and prevents the addition of new properties and deletion of existing property.
 
 // let obj = {
 //     id : 1,
