@@ -73,6 +73,10 @@
 
 
 
-
- 
-
+function destruct(data) {
+        let {mainObj} = data
+        let {obj} = mainObj
+        let {isDev} = obj
+        console.log(isDev)
+}
+destruct ({mainObj: {obj: {id : 1001, objName : "Myra", sal : 45000, isDev : true}}})

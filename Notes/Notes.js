@@ -1307,7 +1307,7 @@ console.log("Hello Wolrd!!!")
 //     objData : "strawberry"
 // }
 
-// Object.seal(obj);
+Object.seal(obj);
 
 //* updation existing property --> allowed
 // console.log(obj)
