@@ -1601,10 +1601,10 @@ Object.seal(obj);
 
 //? For only values
 // for (let value in obj){
-//     console.log(obj[key])
+//     console.log(value)
 // }
 
-//? For only keys and values
+//? For both keys and values
 // let newObj = {};
 
 // for (let key in obj) {
@@ -1650,17 +1650,17 @@ Object.seal(obj);
 
 // let customer1 = {
 //     id : 1,
-//     customerName : Priyanka,
+//     customerName : "Priyanka",
 // }
 
 // let customer2 = {
 //     id : 2,
-//     customerName : Priyanka,
+//     customerName : "Roshni",
 // }
 
 // let customer3 = {
 //     id : 3,
-//     customerName : Priyanka,
+//     customerName : "Pooja",
 // }
 
 // function makeBill(amount, address) {
@@ -1674,7 +1674,8 @@ Object.seal(obj);
 // makeBill.apply(customer2, [9850000, "Noida"])
 
 // let newFn = makeBill.call(customer1, 950000, "Gurgaon")
-// newFn()
+
+// Here newFn() is a bound function.
 
 //! call: The call method is used to invoke a function immediately while explicitly specifying what the this keyword should refer to. It accepts arguments individually (comma-separated).
 

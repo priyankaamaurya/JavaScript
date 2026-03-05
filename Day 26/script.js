@@ -73,10 +73,29 @@
 
 
 
-function destruct(data) {
-        let {mainObj} = data
-        let {obj} = mainObj
-        let {isDev} = obj
-        console.log(isDev)
+let customer1 = {
+    id : 1,
+    customerName : "Priyanka",
 }
-destruct ({mainObj: {obj: {id : 1001, objName : "Myra", sal : 45000, isDev : true}}})
+
+let customer2 = {
+    id : 2,
+    customerName : "Roshni",
+}
+
+let customer3 = {
+    id : 3,
+    customerName : "Pooja",
+}
+
+function makeBill(amount, address) {
+    console.log(`My name is ${this.customerName} and total amount is ${amount} and address is ${address}`)
+}
+
+// makeBill.call(customer1, 950000, "Gurgaon")
+// makeBill.call(customer2, 900000, "Noida")
+
+// makeBill.apply(customer1, [950000, "Gurgaon"])
+// makeBill.apply(customer2, [9850000, "Noida"])
+
+let newFn = makeBill.call(customer1, 950000, "Gurgaon")
