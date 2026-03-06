@@ -40,6 +40,14 @@
 // console.log(currentDate-birthDate) 
 
 
+// let birthDate = new Date("2003-11-17")
+// let currentDate = new Date()
+// console.log(currentDate-birthDate) 
+
+// let birthDate = new Date("2003-11-17")
+// let currentDate = new Date("2005-06-25")
+// console.log(currentDate-birthDate) 
+
 //? Math.Object :
 
 //! Euler's no 
