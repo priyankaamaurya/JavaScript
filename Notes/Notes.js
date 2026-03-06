@@ -1600,8 +1600,8 @@ Object.seal(obj);
 // }
 
 //? For only values
-// for (let value in obj){
-//     console.log(value)
+// for (let key in obj){
+//     console.log(obj[key])
 // }
 
 //? For both keys and values
@@ -1673,8 +1673,8 @@ Object.seal(obj);
 // makeBill.apply(customer1, [950000, "Gurgaon"])
 // makeBill.apply(customer2, [9850000, "Noida"])
 
-// let newFn = makeBill.call(customer1, 950000, "Gurgaon")
-
+// let newFn = makeBill.bind(customer1, 950000, "Gurgaon")
+// newFn();
 // Here newFn() is a bound function.
 
 //! call: The call method is used to invoke a function immediately while explicitly specifying what the this keyword should refer to. It accepts arguments individually (comma-separated).
@@ -1709,7 +1709,7 @@ Object.seal(obj);
 //! The DOM tree is created to manipulate the html through the JavaScript (manipulate means adding the element, removing the element, adding the style, removing the style, adding the attribute, removing the attribte etc..)
 
 // node --> object --> javascript
-// Dom tree create so that 
+// Dom tree create so that javaScript can access html elements.     
 
 //? Methods or Accessing HTML elements
 
