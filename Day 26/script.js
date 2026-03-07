@@ -79,7 +79,7 @@
 // console.log(Math.trunc(40.5))
 // console.log(Math.trunc(4.0))
 
-// console.log(Math.abs(40.5))
+// console.log(Math.abs(40.9))
 // console.log(Math.abs(4.0))
 
 // console.log(Math.min(-1, 5, 7, 3, -4,40.5))
