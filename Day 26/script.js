@@ -44,9 +44,18 @@
 // let currentDate = new Date()
 // console.log(currentDate-birthDate) 
 
+
 // let birthDate = new Date("2003-11-17")
-// let currentDate = new Date("2005-06-25")
+// let currentDate = new Date("2005-06-15")
 // console.log(currentDate-birthDate) 
+
+
+//! convert date to string
+// let date = new Date();
+
+// console.log(date.toDateString());
+// console.log(date.toLocaleDateString());
+// console.log(date.toTimeString());
 
 //? Math.Object :
 
@@ -84,22 +93,4 @@
 
 
 
-let p1 = new Promise((res, rej)=>{
-    rej("Promise 1 Completed")
-})
 
-let p2 = new Promise((res, rej)=>{
-    res("Promise 2 Completed")
-})
-
-let p3 = new Promise((res, rej)=>{
-    rej("Promise 3 Completed")
-})
-
-let res = Promise.any([p1, p2, p3])
-
-res.then((result)=>{
-console.log(result)
-}).catch((err)=>{
-console.log(err)
-})

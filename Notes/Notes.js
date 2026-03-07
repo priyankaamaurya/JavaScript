@@ -2185,20 +2185,20 @@ Object.seal(obj);
 
 //! 2. sessionStorage : sessionStorage persist the data only for the particular session. It does not persist the data after closing the browser. The size of the storage is 2-8 MB (depends on the browser).
 
-//? setItem(key, Value) : It is used to add the data inside the localStorage.
+// ? setItem(key, Value) : It is used to add the data inside the sessionStorage.
 // sessionStorage.setItem("id",1)
 // sessionStorage.setItem("name", "Prince")
 // sessionStorage.setItem("Designation", "Developer")
 
-//? getItem(key) : It is used to get the data from the localStorage.
+//? getItem(key) : It is used to get the data from the sessionStorage.
 // let res = sessionStorage.getItem("id")
 // console.log(res)
 // console.log(sessionStorage.getItem("name"))
 
-//? removeItem(key) : It is used to remove the data from the localStorage.
+//? removeItem(key) : It is used to remove the data from the sessionStorage.
 // sessionStorage.removeItem("id")
 
-//? clear() : It is used to clear all the data present inside the localStorage.
+//? clear() : It is used to clear all the data present inside the sessionStorage.
 // sessionStorage.clear()
 
 //! 3. CacheStorage : The CacheStorage interface represents the storage for Cache objects. Available only in secure contexts.
@@ -2246,6 +2246,12 @@ Object.seal(obj);
 // console.log(currentDate-birthDate) 
 // always return in seconds
 
+//! convert date to string
+// let date = new Date();
+
+// console.log(date.toDateString());
+// console.log(date.toLocaleDateString());
+// console.log(date.toTimeString());
 
 //? Math.Object :
 
