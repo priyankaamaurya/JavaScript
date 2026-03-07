@@ -1836,10 +1836,10 @@ Object.seal(obj);
 // onsubmit
 
 //! Mouse Event :
-// onmousehover, onmouseup , onmousedown, onmousemove
+// onmouseover, onmouseup , onmousedown, onmousemove
 
 //! Input Event :
-// onfocus. onblur, onchange, onselect
+// onfocus, onblur, onchange, onselect
 
 //! Keyboard Event :
 // onkeyup, onkeydown
@@ -1901,7 +1901,7 @@ Object.seal(obj);
 
 //! 1. SetTimeout:
 // It accepts 2 argument --> 1. Callback Function  2. Time in milliseconds
-// ClearTimeout --> To stop the setTimeout we uses clearTimeout. It accepts the reference of the the setTimeout.
+// ClearTimeout --> To stop the setTimeout we uses clearTimeout. It accepts the reference of the setTimeout.
 
 // console.log("Task 1")
 // console.log("Task 2")
@@ -1919,7 +1919,6 @@ Object.seal(obj);
 //     for (let i=0; i<10000; i++){}
 //     console.log("Expensive Task Done")
 // },3000)
-
 
 // console.log("Task 3")
 

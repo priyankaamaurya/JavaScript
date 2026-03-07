@@ -84,3 +84,22 @@
 
 
 
+let p1 = new Promise((res, rej)=>{
+    rej("Promise 1 Completed")
+})
+
+let p2 = new Promise((res, rej)=>{
+    res("Promise 2 Completed")
+})
+
+let p3 = new Promise((res, rej)=>{
+    rej("Promise 3 Completed")
+})
+
+let res = Promise.any([p1, p2, p3])
+
+res.then((result)=>{
+console.log(result)
+}).catch((err)=>{
+console.log(err)
+})
