@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MakeMyTrip - #1 Travel Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-content">
+            <img src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/logo@2x.png" alt="MMT Logo" class="logo">
+            
+            <div class="header-right">
+                <div class="h-item">
+                    <span class="h-icon"><i class="fa-solid fa-house-user"></i></span>
+                    <div class="h-text"><b>List Your Property</b><span>Grow your business!</span></div>
+                </div>
+                <div class="h-item">
+                    <span class="h-icon blue"><i class="fa-solid fa-suitcase"></i></span>
+                    <div class="h-text"><b>Introducing myBiz</b><span>Business Travel Solution</span></div>
+                </div>
+                <div class="h-item">
+                    <span class="h-icon red"><i class="fa-solid fa-heart"></i></span>
+                    <div class="h-text"><b>Wishlist</b><span>Save favourites</span></div>
+                </div>
+                <div class="h-item">
+                    <span class="h-icon gold"><i class="fa-solid fa-briefcase"></i></span>
+                    <div class="h-text"><b>My Trips</b><span>Manage bookings</span></div>
+                </div>
+                <button class="login-btn">
+                    <img src="https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/mmtLogoWhite.png" width="20">
+                    Login or Create Account <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <div class="lang-select">🇮🇳 INR | English <i class="fa-solid fa-chevron-down"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <main class="hero-section">
+        <div class="search-wrapper">
+            
+            <nav class="category-menu">
+                <div class="menu-item active"><i class="fa-solid fa-plane"></i><span>Flights</span></div>
+                <div class="menu-item"><i class="fa-solid fa-hotel"></i><span>Hotels</span></div>
+                <div class="menu-item"><i class="fa-solid fa-house-chimney"></i><span>Villas & Homestays</span></div>
+                <div class="menu-item"><i class="fa-solid fa-suitcase"></i><span>Holiday Packages</span></div>
+                <div class="menu-item"><i class="fa-solid fa-train"></i><span>Trains</span></div>
+                <div class="menu-item"><i class="fa-solid fa-bus"></i><span>Buses</span></div>
+                <div class="menu-item"><i class="fa-solid fa-car"></i><span>Cabs</span></div>
+                <div class="menu-item"><i class="fa-solid fa-landmark"></i><span>Tours & Attractions</span><span class="badge">new</span></div>
+                <div class="menu-item"><i class="fa-brands fa-cc-visa"></i><span>Visa</span></div>
+                <div class="menu-item"><i class="fa-solid fa-ferry"></i><span>Cruise</span><span class="badge">new</span></div>
+                <div class="menu-item"><i class="fa-solid fa-money-bill"></i><span>ForexCard & Currency</span></div>
+                <div class="menu-item"><i class="fa-brands fa-fantasy-flight-games"></i><span>Travel Insurance</span></div>
+            </nav>
+
+            <div class="white-card">
+                <div class="trip-meta">
+                    <div class="trip-radios">
+                        <label><input type="radio" name="trip" checked> <span>One Way</span></label>
+                        <label><input type="radio" name="trip"> <span>Round Trip</span></label>
+                        <label><input type="radio" name="trip"> <span>Multi City</span></label>
+                    </div>
+                    <p class="book-info">Book International and Domestic Flights</p>
+                </div>
+
+                <div class="search-grid">
+                    <div class="grid-box border-r">
+                        <label class="lbl">From</label>
+                        <div class="val">Delhi</div>
+                        <p class="sub">DEL, Delhi Airport India</p>
+                        <div class="swapper"><i class="fa-solid fa-right-left"></i></div>
+                    </div>
+                    <div class="grid-box border-r">
+                        <label class="lbl">To</label>
+                        <div class="val">Bengaluru</div>
+                        <p class="sub">BLR, Bengaluru International Airport ...</p>
+                    </div>
+                    <div class="grid-box border-r">
+                        <label class="lbl">Departure <i class="fa-solid fa-chevron-down blue-i"></i></label>
+                        <div class="val">15 <span class="mon">Mar'26</span></div>
+                        <p class="sub">Sunday</p>
+                    </div>
+                    <div class="grid-box border-r">
+                        <label class="lbl">Return <i class="fa-solid fa-chevron-down blue-i"></i></label>
+                        <p class="placeholder">Tap to add a return date for bigger discounts</p>
+                    </div>
+                    <div class="grid-box">
+                        <label class="lbl">Travellers & Class <i class="fa-solid fa-chevron-down blue-i"></i></label>
+                        <div class="val">1 <span class="mon">Traveller</span></div>
+                        <p class="sub">Economy/Premium Economy</p>
+                    </div>
+                </div>
+
+                <div class="fares-section">
+                    <div class="fare-title">SPECIAL <br> FARES:</div>
+                    <div class="fare-opt active">Regular <br><small>Regular fares</small></div>
+                    <div class="fare-opt">Student <br><small>Extra discounts/baggage</small></div>
+                    <div class="fare-opt">Armed Forces <br><small>Up to ₹ 600 off</small></div>
+                    <div class="fare-opt">Senior Citizen <br><small>Up to ₹ 600 off</small></div>
+                    <div class="fare-opt">Doctors & Nurses <br><small>Up to ₹ 600 off</small></div>
+                </div>
+
+                <button class="search-btn">SEARCH</button>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

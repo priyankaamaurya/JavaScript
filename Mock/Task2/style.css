@@ -1,0 +1,146 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Lato', sans-serif; }
+
+body { background: #e7e7e7; }
+
+/* Header Styling */
+.main-header {
+    background: #ffffff;
+    padding: 10px 50px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo { width: 115px; }
+
+.header-right { display: flex; align-items: center; gap: 20px; }
+
+.h-item { display: flex; align-items: center; gap: 8px; cursor: pointer; }
+
+.h-icon { font-size: 20px; color: #757575; }
+.h-icon.blue { color: #008cff; }
+.h-icon.red { color: #eb2026; }
+.h-icon.gold { color: #f5a623; }
+
+.h-text b { display: block; font-size: 11px; }
+.h-text span { font-size: 10px; color: #757575; }
+
+.login-btn {
+    background: linear-gradient(90deg, #53b2fe, #065af3);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.lang-select { font-size: 12px; font-weight: 700; color: #4a4a4a; }
+
+/* Hero Section */
+.hero-section {
+    background-image: url('https://media.istockphoto.com/id/1082336256/photo/man-hiker-solo-on-the-mountain-during-golden-hour.jpg?s=612x612&w=0&k=20&c=o7BqnbhVFmMVey0-YccKaSb-OJOJyKjHW3j6A6uJ5E0=');
+    /* background-image: url('https://imgak.mmtcdn.com/pwa_v3/pwa_hotel_assets/header/bg6.jpg'); */
+    background-size: cover;
+    min-height: 500px;
+    padding-top: 50px;
+    position: relative;
+}
+
+.search-wrapper { width: 1200px; margin: 0 auto; position: relative; }
+
+/* Icon Menu Overlap */
+.category-menu {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 5;
+    transform: translateY(35px);
+    width: 90%;
+    margin: 0 auto;
+}
+
+.menu-item { text-align: center; color: #4a4a4a; font-size: 12px; font-weight: 700; cursor: pointer; position: relative; }
+.menu-item i { display: block; font-size: 24px; margin-bottom: 5px; color: #757575; }
+.menu-item.active, .menu-item:hover { color: #008cff; border-bottom: 2px solid #008cff; }
+.menu-item.active i { color: #008cff; }
+
+.badge {
+    position: absolute; top: -5px; right: -10px;
+    background: #eb2026; color: #fff; font-size: 8px;
+    padding: 2px 5px; border-radius: 10px; text-transform: uppercase;
+}
+
+/* White Card */
+.white-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 60px 40px 40px 40px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.trip-meta { display: flex; justify-content: space-between; margin-bottom: 20px; }
+.trip-radios { display: flex; gap: 20px; font-weight: 700; font-size: 14px; }
+.book-info { font-size: 12px; font-weight: 700; color: #4a4a4a; }
+
+/* Search Grid */
+.search-grid {
+    display: flex;
+    border: 1px solid #e7e7e7;
+    border-radius: 10px;
+    position: relative;
+}
+
+.grid-box { flex: 1; padding: 15px 25px; cursor: pointer; position: relative; }
+.grid-box:hover { background: #f2f2f2; }
+.border-r { border-right: 1px solid #e7e7e7; }
+
+.lbl { font-size: 14px; color: #4a4a4a; font-weight: 700; }
+.blue-i { font-size: 10px; color: #008cff; }
+.val { font-size: 30px; font-weight: 900; margin-top: 5px; }
+.mon { font-size: 20px; font-weight: 700; }
+.sub { font-size: 11px; color: #4a4a4a; margin-top: 5px; }
+.placeholder { font-size: 12px; color: #9b9b9b; margin-top: 10px; }
+
+.swapper {
+    position: absolute; right: -15px; top: 50%; transform: translateY(-50%);
+    background: #fff; border: 1px solid #e7e7e7; width: 30px; height: 30px;
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: #008cff; z-index: 10; font-size: 12px;
+}
+
+/* Fares */
+.fares-section { display: flex; align-items: center; gap: 15px; margin-top: 25px; }
+.fare-title { font-size: 11px; font-weight: 900; }
+.fare-opt {
+    background: #f2f2f2; padding: 10px 15px; border-radius: 5px;
+    font-size: 12px; font-weight: 700; line-height: 1.2;
+}
+.fare-opt small { font-weight: 400; font-size: 10px; color: #757575; }
+.fare-opt.active { background: #eaf5ff; border: 1px solid #008cff; color: #008cff; }
+
+/* Main Button */
+.search-btn {
+    position: absolute; bottom: -30px; left: 50%; transform: translateX(-50%);
+    background: linear-gradient(90deg, #53b2fe, #065af3);
+    color: #fff; border: none; padding: 15px 100px;
+    border-radius: 40px; font-size: 26px; font-weight: 900;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3); cursor: pointer;
+}

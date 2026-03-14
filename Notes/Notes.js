@@ -156,7 +156,7 @@
 //* Use Case: Constants
 
 //! to print code
-console.log("Hello Wolrd!!!")
+// console.log("Hello Wolrd!!!")
 
 //? INTRODUCTION
 // name
@@ -354,7 +354,7 @@ console.log("Hello Wolrd!!!")
 // Start executing your code as fast as possible.
 // Provide quick results, even without optimization.
 
-//!Profiler
+//! Profiler
 // The Profiler watches your running and identifies:
 // Which functions run repeatedly
 // Which loops are heavy
@@ -616,8 +616,8 @@ console.log("Hello Wolrd!!!")
 // }
 
 //? Function with Expression
-// When we are passing function as a value inside a variable, it is known as Function with Expression.
-// The stored function is known as first class function or first citizen function.
+//! When we are passing function as a value inside a variable, it is known as Function with Expression.
+//! The stored function is known as first class function or first citizen function.
 
 //! example: Function with Expression function
 // let fun = function(){
@@ -625,8 +625,8 @@ console.log("Hello Wolrd!!!")
 // fun()
 
 //? Arrow Function
-// It is shorter way of writing function code.
-// It is also known as Fat arrow function.
+//! It is shorter way of writing function code.
+//! It is also known as Fat arrow function.
 
 //! example:
 //  let arrFn = ()=> {
@@ -677,9 +677,11 @@ console.log("Hello Wolrd!!!")
 // let arrFn = ()=> "hlo";
 // console.log(arrFn());
 
-//? IIFE
+//? IIFE - Immediate Invoke Function Expression
 // If while calling the function immediately we are invoking the funtion.
 // It helps us to avoid the global variable pollution.
+
+//! GLOBAL VARIABLE POLLUTION: It happens when too many variables are declared in the global scope, which can create conflicts and unexpected behaviour in a program.
 
 //! example:
 // (() => {
@@ -738,7 +740,7 @@ console.log("Hello Wolrd!!!")
 
 //! JavaScript Currying
 // When a function is returning multiple function.
-// This allows for arguments to be applied one at a time, with each step returning a new function that expects the next arguments until all arguments have been provided and the final result is computed.
+// This allows for arguments to be applied one at a time, with each step returning a new function that accepts the next arguments until all arguments have been provided and the final result is computed.
 
 // function grandParent(){
 //     console.log("Grandparent");
@@ -788,7 +790,7 @@ console.log("Hello Wolrd!!!")
 // console.log(data.next());
 
 //? Default parameters
-// Default parameters are values already set in a function, so if you don't give that value when calling the function, the function will use it automatically.
+//! Default parameters are values already set in a function, so if you don't give that value when calling the function, the function will use it automatically.
 
 // function add(a,b){
 //     console.log(a);
@@ -807,11 +809,19 @@ console.log("Hello Wolrd!!!")
 // }
 // add(100,200);
 
+// function add(a,b,c = 500){
+//     console.log(a+b+c);
+// }
+// add(100,200,300);
+
 //? Arguments Objects
-// The arguments object in javaScript is a built-in, array-like object that is locally accessible within all non-arrow functions. It contains the values of all arguments passed to that function.
+//! The arguments object in javaScript is a built-in, array-like object that is locally accessible within all non-arrow functions. It contains the values of all arguments passed to that function.
 
 // function abc(){
 //     console.log(arguments);
+//     console.log(typeof(arguments));
+//     console.log(typeof(argument));
+//     console.log(typeof(typeof(arguments)));
 //     console.log(arguments[0]);
 //     console.log(arguments[1]);
 // }
@@ -837,8 +847,8 @@ console.log("Hello Wolrd!!!")
 // console.log(typeof res);
 
 //? String 
-// String is a primitive data type.
-// It is a sequence of characters.
+//! String is a primitive data type.
+//! It is a sequence of characters.
 
 //? Ways of creating the String
 
@@ -1003,8 +1013,7 @@ console.log("Hello Wolrd!!!")
 // console.log(str.includes("hgjkh"))
 
 //? Array
-
-// It is a non- primitive data type which is used to store the data. It can be homogeneous as well as heterogeneous.
+//! It is a non- primitive data type which is used to store the data. It can be homogeneous as well as heterogeneous.
 
 //! Ways of creating array 
 
@@ -1232,7 +1241,7 @@ console.log("Hello Wolrd!!!")
 // console.log(obj2);
 
 //? Object.create
-//  It is used to create 1 new object. The properties of created object is present inside the prototype of the newly created object. 
+//! It is used to create 1 new object. The properties of created object is present inside the prototype of the newly created object. 
 
 // let newObj = Object.create({ id : 1, sal : 1253000});
 // console.log(newObj);
@@ -1307,7 +1316,7 @@ console.log("Hello Wolrd!!!")
 //     objData : "strawberry"
 // }
 
-Object.seal(obj);
+// Object.seal(obj);
 
 //* updation existing property --> allowed
 // console.log(obj)
@@ -1711,7 +1720,7 @@ Object.seal(obj);
 // node --> object --> javascript
 // Dom tree create so that javaScript can access html elements.     
 
-//? Methods or Accessing HTML elements
+//? Methods of Accessing HTML elements
 
 //! document.getElementById():
 // This method is used for targeting the HTML Elements with the help of Id of the element.
