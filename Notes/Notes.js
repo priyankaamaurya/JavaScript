@@ -2249,11 +2249,18 @@
 // let previousDate1 = new Date("2005-06-15")
 // console.log(previousDate1)
 
+// let previousDate1 = new Date("2005-06-25")
+// console.log(previousDate1)
+
 //! difference between date  (always return in seconds)
 // let birthDate = new Date("2005-06-25")
 // let currentDate = new Date()
 // console.log(currentDate-birthDate) 
 // always return in seconds
+
+// let birthDate = new Date("2005-06-15")
+// let currentDate = new Date()
+// console.log(currentDate-birthDate)
 
 //! convert date to string
 // let date = new Date();
