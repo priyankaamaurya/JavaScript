@@ -20,21 +20,21 @@
 
 //! Task 2
 
-// let btn = document.getElementById("Button");
+let btn = document.getElementById("Button");
 
-// btn.addEventListener("click", () => {
-//     let text = document.getElementById("text").value;
+btn.addEventListener("click", () => {
+    let text = document.getElementById("text").value;
 
-//     let reversed = text.split("").reverse().join("");
+    let reversed = text.split("").reverse().join("");
 
     // for (let i = text.length - 1; i >= 0; i--) {
     //     reversed += text[i];
     // }
 
-//     document.getElementById("result").innerText = reversed;
-// });
+    document.getElementById("result").innerText = reversed;
+});
 
-function fun(){
-    console.log(typeof arguments)
-}
-fun(10,20,30)
+// function fun(){
+//     console.log(typeof arguments)
+// }
+// fun(10,20,30)
