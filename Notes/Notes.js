@@ -247,7 +247,6 @@
 //! Non-Primitive --> Mutable (which can be changed)
 
 //! Function:
-
 // function abc(){
 //     console.log("Function")
 // }
