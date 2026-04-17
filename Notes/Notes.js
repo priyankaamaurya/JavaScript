@@ -2324,3 +2324,31 @@
 // -- checks if call stack is empty
 // -- first executes microtasks
 // -- then executes callback queue tasks
+
+
+
+// function createUser(){
+//     let balance = 1000;
+
+//     return {
+//         deposit(amount){
+//             balance += amount;
+//             console.log(balance);
+//         },
+
+//         withdraw(amount){
+//             balance -= amount;
+//             console.log(balance);
+//         }
+//     };
+// }
+
+// const user = createUser();
+
+// user.deposit(500);
+// user.withdraw(200);
+
+
+// Output is :
+// 1500
+// 1300 
