@@ -2299,4 +2299,28 @@
 // console.log(Math.max(-1, 5, 7, 3, -4,40.5))
 // console.log(Math.max(10, -55, 35, 74, 4.0))
 
+//? Event Loop
 
+// Event Loop is a mechanism in JavaScript that continuosly checks: 
+
+// -- whether the Call Stack is empty and moves task from queues to the stack for execution.
+
+//! Call Stack: 
+// A data structure where JavaScript executes code line by line (LIFO -- Last In First Out).
+
+//! Web APIs: 
+// Features provided by the browser (not JS itself) to handle async tasks like:
+// setTimeout
+// Dom events
+// API calls
+
+//! Callback Queue (Task Queue): 
+// A queue where callbacks from async operations wait before execution.
+
+//! MicroTask Queue: 
+// A high-priority queue for Promises (.then)
+
+//! Event Loop is a process that 
+// -- checks if call stack is empty
+// -- first executes microtasks
+// -- then executes callback queue tasks
