@@ -75,13 +75,3 @@ num.forEach((num)=> {
 
 
 
-var a = 10;
-
-function abc(){
-    console.log(a)
-        var a = 100;
-        a++;
-}
-
-console.log(a)
-abc()
