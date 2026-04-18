@@ -2352,3 +2352,69 @@
 // Output is :
 // 1500
 // 1300 
+
+
+
+
+
+// console.log("A");
+
+// setTimeout(() => {
+//     console.log("B");
+
+//     Promise.resolve().then(() => {
+//         console.log("C");
+//     });
+// },0);
+
+// Promise.resolve().then(() => {
+//     console.log("D");
+// });
+
+// console.log("E")
+
+
+// OUTPUT: 
+// A
+// E
+// D
+// B
+// C
+
+
+
+// var a = 10
+
+// let obj = {
+//     a: 100
+//     printt : ()=> {
+//         console.log(this.a)
+//         this.a++
+//     }
+// }
+
+// console.log(a)
+// console.log(obj.printt())
+// console.log(a)
+
+// OUTPUT: 
+// 10
+// 10
+// 11
+
+
+
+// var a = 10;
+
+// function abc(){
+//     console.log(a)
+//         var a = 100;
+//         a++;
+// }
+
+// console.log(a)
+// abc()
+
+// OUTPUT: 
+// 10
+// undefined
