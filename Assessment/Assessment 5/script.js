@@ -81,13 +81,45 @@
 
 //! 8. Find Missing Number
 
-let arr = [1,2,4,5]
+// let arr = [1,2,3,4,6,7,8,9]
 
-function findMissing(arr, n) {
-    let total=(n * (n + 1)) / 2;
-    let sum = arr.reduce((a,b) => a + b, 0);
-    return total - sum;
+// function findMissing(arr, n) {
+//     let total=(n * (n + 1)) / 2;
+//     let sum = arr.reduce((a,b) => a + b, 0);
+//     return total - sum;
+// }
+
+// let res = findMissing(arr, 9)
+// console.log(res)
+
+//! 9. Group Anagrams
+
+// let arr = ["eat", "ate", "tea", "tan", "bat", "nat"]
+
+// function groupAnagrams(arr) {
+//     let map = {};
+
+//     for (let word of arr) {
+//         let key = word.split('').sort().join('');
+//         if(!map[key]) {
+//             map[key] = [];
+//         }
+//         map[key].push(word);
+//     }
+//     return Object.values(map);
+// }
+
+// let res = groupAnagrams(arr) 
+// console.log(res);
+
+//! 10. Rotate Array (Right by K steps)
+
+let arr = [1,2,3,4,5]
+
+function rotateArray(arr, k) {
+    k = k % arr.length;
+    return arr.slice(-k).concat(arr.slice(0, -k));
 }
 
-let res = findMissing(arr)
+let res = rotateArray(arr, 2)
 console.log(res)
