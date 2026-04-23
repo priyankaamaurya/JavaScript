@@ -33,7 +33,7 @@
 // let res = isPalindrome(str)
 // console.log(res)
 
-let str = "mam"
+let str = "star"
 
 function isPalindrome(str) {
     let clean = str.toLowerCase();
