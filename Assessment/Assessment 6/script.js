@@ -33,6 +33,16 @@
 // let res = isPalindrome(str)
 // console.log(res)
 
+let str = "mam"
+
+function isPalindrome(str) {
+    let clean = str.toLowerCase();
+    return clean === clean.split('').reverse().join('');
+}
+
+let res = isPalindrome(str)
+console.log(res)
+
 //! 3. Find First Non-Repeating Character
 
 
