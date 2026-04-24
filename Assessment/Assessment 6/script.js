@@ -33,16 +33,32 @@
 // let res = isPalindrome(str)
 // console.log(res)
 
-let str = "star"
+// let str = "star"
 
-function isPalindrome(str) {
-    let clean = str.toLowerCase();
-    return clean === clean.split('').reverse().join('');
-}
+// function isPalindrome(str) {
+//     let clean = str.toLowerCase();
+//     return clean === clean.split('').reverse().join('');
+// }
 
-let res = isPalindrome(str)
-console.log(res)
+// let res = isPalindrome(str)
+// console.log(res)
 
 //! 3. Find First Non-Repeating Character
 
+let str = "aabbcde";
+
+function fnr(str) {
+    let count = {};
+
+    for (let ch of str){
+        count[ch] = (count[ch] || 0) + 1;
+    }
+
+    for (let ch of str) {
+        if (count[ch] === 1) return ch;
+    }
+}
+
+let res = fnr(str)
+console.log(res)
 
