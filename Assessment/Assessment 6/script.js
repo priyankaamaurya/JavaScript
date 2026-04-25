@@ -45,20 +45,56 @@
 
 //! 3. Find First Non-Repeating Character
 
-let str = "aabbcde";
+// let str = "aabbcde";
 
-function fnr(str) {
-    let count = {};
+// function fnr(str) {
+//     let count = {};
 
-    for (let ch of str){
-        count[ch] = (count[ch] || 0) + 1;
-    }
+//     for (let ch of str){
+//         count[ch] = (count[ch] || 0) + 1;
+//     }
 
-    for (let ch of str) {
-        if (count[ch] === 1) return ch;
-    }
+//     for (let ch of str) {
+//         if (count[ch] === 1) return ch;
+//     }
+// }
+
+// let res = fnr(str)
+// console.log(res)
+
+//! 5. Debounce Function
+
+// function debounce(fn, delay) {
+//     let timer;
+
+//     return function(...args){
+//         clearTimeout(timer);
+//         timer = setTimeout(()=> {
+//             fn.apply(this, args);
+//         }, delay);
+//     };
+// }
+
+// function search(query) {
+//   console.log("Searching for:", query);
+// }
+
+// let debouncedSearch = debounce(search, 1000);
+
+// debouncedSearch("h");
+// debouncedSearch("he");
+// debouncedSearch("hel");
+// debouncedSearch("hell");
+// debouncedSearch("hello");
+
+//! 6. Promise Example (Async JS)
+
+function asyncTask() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Task done");
+        }, 1000)
+    });
 }
 
-let res = fnr(str)
-console.log(res)
-
+asyncTask().then(res => console.log(res));
