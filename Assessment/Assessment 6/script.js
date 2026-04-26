@@ -89,12 +89,20 @@
 
 //! 6. Promise Example (Async JS)
 
-function asyncTask() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("Task done");
-        }, 1000)
-    });
+// function asyncTask() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("Task done");
+//         }, 1000)
+//     });
+// }
+
+// asyncTask().then(res => console.log(res));
+
+//! 7. Function to Check Even or Odd
+
+function checkEvenOdd(num){
+    return num % 2 === 0 ? "even" : "odd" ; 
 }
 
-asyncTask().then(res => console.log(res));
+console.log(checkEvenOdd(4))
