@@ -101,8 +101,18 @@
 
 //! 7. Function to Check Even or Odd
 
-function checkEvenOdd(num){
-    return num % 2 === 0 ? "even" : "odd" ; 
+// function checkEvenOdd(num){
+//     return num % 2 === 0 ? "even" : "odd" ; 
+// }
+
+// console.log(checkEvenOdd(4))
+
+//! 8. Function to Find Factorial
+
+function findFact(n) {
+    if (n === 0) return 1;
+    return n * findFact (n-1); 
+    
 }
 
-console.log(checkEvenOdd(4))
+console.log(findFact(5))
