@@ -109,10 +109,19 @@
 
 //! 8. Function to Find Factorial
 
-function findFact(n) {
-    if (n === 0) return 1;
-    return n * findFact (n-1); 
+// function findFact(n) {
+//     if (n === 0) return 1;
+//     return n * findFact (n-1); 
     
+// }
+
+// console.log(findFact(5))
+
+//! 9. Function with Default Parameter
+
+function greet(name="Guest") {
+    return "Hello " + name;
 }
 
-console.log(findFact(5))
+console.log(greet())
+console.log(greet("Priyanka"))
