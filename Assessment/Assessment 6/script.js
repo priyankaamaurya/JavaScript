@@ -119,9 +119,20 @@
 
 //! 9. Function with Default Parameter
 
-function greet(name="Guest") {
-    return "Hello " + name;
+// function greet(name="Guest") {
+//     return "Hello " + name;
+// }
+
+// console.log(greet())
+// console.log(greet("Priyanka"))
+
+//! 10. Function Returning Another Function (Closure)
+
+function outer(x) {
+    return function inner(y) {
+        return x + y ;
+    } 
 }
 
-console.log(greet())
-console.log(greet("Priyanka"))
+let add = outer(5)
+console.log(add(3))
