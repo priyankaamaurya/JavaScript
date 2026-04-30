@@ -128,11 +128,20 @@
 
 //! 10. Function Returning Another Function (Closure)
 
-function outer(x) {
-    return function inner(y) {
-        return x + y ;
+// function outer(x) {
+//     return function inner(y) {
+//         return x + y ;
+//     } 
+// }
+
+// let add = outer(5)
+// console.log(add(3))
+
+function outer(a) {
+    return function inner(b) {
+        return a * b ;
     } 
 }
 
-let add = outer(5)
+let add = outer(6)
 console.log(add(3))
