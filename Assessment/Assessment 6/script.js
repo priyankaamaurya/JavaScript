@@ -137,11 +137,23 @@
 // let add = outer(5)
 // console.log(add(3))
 
-function outer(a) {
-    return function inner(b) {
-        return a * b ;
-    } 
+// function outer(a) {
+//     return function inner(b) {
+//         return a * b ;
+//     } 
+// }
+
+// let add = outer(6)
+// console.log(add(3))
+
+//! 11. Currying Function
+
+function curry(a){
+    return function (b) {
+        return function (c) {
+            return a + b + c;
+        }
+    }
 }
 
-let add = outer(6)
-console.log(add(3))
+console.log(curry(1)(2)(3));
