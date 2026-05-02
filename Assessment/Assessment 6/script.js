@@ -148,12 +148,20 @@
 
 //! 11. Currying Function
 
-function curry(a){
-    return function (b) {
-        return function (c) {
-            return a + b + c;
-        }
-    }
+// function curry(a){
+//     return function (b) {
+//         return function (c) {
+//             return a + b + c;
+//         }
+//     }
+// }
+
+// console.log(curry(1)(2)(3));
+
+//! 12. Function to Count Arguments
+
+function countArgs(...args) {
+    return args.length;
 }
 
-console.log(curry(1)(2)(3));
+console.log(countArgs(1,2,3,4,5,6))
