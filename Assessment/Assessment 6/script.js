@@ -160,8 +160,19 @@
 
 //! 12. Function to Count Arguments
 
-function countArgs(...args) {
-    return args.length;
-}
+// function countArgs(...args) {
+//     return args.length;
+// }
 
-console.log(countArgs(1,2,3,4,5,6))
+// console.log(countArgs(1,2,3,4,5,6))
+
+//! 13. this Keyword
+
+const obj = {
+    name : "JS",
+    show : function () {
+        console.log(this.name);
+    }
+};
+
+obj.show();
