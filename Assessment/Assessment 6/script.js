@@ -168,11 +168,22 @@
 
 //! 13. this Keyword
 
-const obj = {
+// const obj = {
+//     name : "JS",
+//     show : function () {
+//         console.log(this.name);
+//     }
+// };
+
+// obj.show();
+
+//! 14. Arrow Function + this
+
+let obj = {
     name : "JS",
-    show : function () {
-        console.log(this.name);
+    show : () => {
+        console.log(this.name)
     }
 };
 
-obj.show();
+console.log(obj.show())
