@@ -179,11 +179,23 @@
 
 //! 14. Arrow Function + this
 
-let obj = {
-    name : "JS",
-    show : () => {
-        console.log(this.name)
-    }
-};
+// let obj = {
+//     name : "JS",
+//     show : () => {
+//         console.log(this.name)
+//     }
+// };
 
-console.log(obj.show())
+// console.log(obj.show())
+
+
+let str = "Reeta"
+
+let obj = {
+    name : "Prachi",
+    display : () => {
+        console.log(this.str)
+    }
+}
+
+console.log(obj.display())
