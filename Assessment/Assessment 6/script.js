@@ -189,13 +189,14 @@
 // console.log(obj.show())
 
 
-let str = "Reeta"
+// let str = "Reeta"
 
-let obj = {
-    name : "Prachi",
-    display : () => {
-        console.log(this.str)
-    }
-}
+// let obj = {
+//     name : "Prachi",
+//     display : () => {
+//         console.log(this.str)
+//     }
+// }
 
-console.log(obj.display())
+// console.log(obj.display())
+
