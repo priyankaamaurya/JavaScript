@@ -10,10 +10,17 @@
 
 //! 2. Reject Case
 
-let p = new Promise((resolve, reject) => {
-    reject("Rejected");
-})
+// let p = new Promise((resolve, reject) => {
+//     reject("Rejected");
+// })
 
-p
-.then(res => console.log(res))
-.catch(err => console.log(err))
+// p
+// .then(res => console.log(res))
+// .catch(err => console.log(err))
+
+//! 3. Promise Chain
+
+Promise.resolve(5)
+.then(x => x * 2)
+.then(x => x + 5)
+.then(console.log);
