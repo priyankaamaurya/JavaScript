@@ -20,7 +20,16 @@
 
 //! 3. Promise Chain
 
+// Promise.resolve(5)
+// .then(x => x * 2)
+// .then(x => x + 5)
+// .then(console.log);
+
+//! 4. Tricky Chain
+
 Promise.resolve(5)
-.then(x => x * 2)
-.then(x => x + 5)
-.then(console.log);
+.then(x => {
+    console.log(x)
+})
+
+.then(x => console.log(x))
