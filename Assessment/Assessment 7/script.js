@@ -27,9 +27,17 @@
 
 //! 4. Tricky Chain
 
-Promise.resolve(5)
-.then(x => {
-    console.log(x)
-})
+// Promise.resolve(5)
+// .then(x => {
+//     console.log(x)
+// })
 
-.then(x => console.log(x))
+// .then(x => console.log(x))
+
+//! 5. Error Handling
+
+Promise.resolve()
+    .then(() => {
+        throw new Error ("Fail");
+    })
+    .catch(err => console.log(err.message));
