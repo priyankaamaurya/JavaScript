@@ -36,8 +36,14 @@
 
 //! 5. Error Handling
 
-Promise.resolve()
-    .then(() => {
-        throw new Error ("Fail");
-    })
-    .catch(err => console.log(err.message));
+// Promise.resolve()
+//     .then(() => {
+//         throw new Error ("Fail");
+//     })
+//     .catch(err => console.log(err.message));
+
+//! 6. Finally Block
+
+Promise.resolve("Done")
+.finally(() => console.log("Finally"))
+.then(res => console.log(res))
