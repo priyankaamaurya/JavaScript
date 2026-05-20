@@ -44,6 +44,6 @@
 
 //! 6. Finally Block
 
-Promise.resolve("Done")
-.finally(() => console.log("Finally"))
-.then(res => console.log(res))
+// Promise.resolve("Done")
+// .finally(() => console.log("Finally"))
+// .then(res => console.log(res))
