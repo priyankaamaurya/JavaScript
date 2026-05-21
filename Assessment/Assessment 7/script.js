@@ -47,3 +47,11 @@
 // Promise.resolve("Done")
 // .finally(() => console.log("Finally"))
 // .then(res => console.log(res))
+
+//! 7. Promise.all
+
+let p1 = Promise.resolve(1);
+let p2 = Promise.resolve(2);
+
+Promise.all([p1, p2])
+  .then(res => console.log(res));
