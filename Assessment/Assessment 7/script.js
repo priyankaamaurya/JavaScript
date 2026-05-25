@@ -56,4 +56,16 @@
 // Promise.all([p1, p2])
 //   .then(res => console.log(res));
 
-//! 8.
+//! 8. setTimeout + Promise (Event Loop)
+
+console.log("Start")
+
+setTimeout(() => {
+    console.log("Timeout")
+}, 0)
+
+Promise.resolve().then(() => {
+    console.log("Promise")
+})
+
+console.log("End")
