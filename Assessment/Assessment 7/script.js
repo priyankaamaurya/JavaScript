@@ -58,14 +58,16 @@
 
 //! 8. setTimeout + Promise (Event Loop)
 
-console.log("Start")
+// console.log("Start")
 
-setTimeout(() => {
-    console.log("Timeout")
-}, 0)
+// setTimeout(() => {
+//     console.log("Timeout")
+// }, 0)
 
-Promise.resolve().then(() => {
-    console.log("Promise")
-})
+// Promise.resolve().then(() => {
+//     console.log("Promise")
+// })
 
-console.log("End")
+// console.log("End")
+
+//! 9. 
