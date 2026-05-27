@@ -70,4 +70,14 @@
 
 // console.log("End")
 
-//! 9. 
+//! 9. Create a promise that resolves after 2 sec
+
+function delay() {
+    return new Promise(resolve => {
+        setTimeout(()=> {
+            resolve("Done after 2 sec");
+        }, 2000)
+    })
+}
+
+delay().then(console.log)
